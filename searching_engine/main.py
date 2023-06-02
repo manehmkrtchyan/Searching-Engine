@@ -1,12 +1,10 @@
-from word import Word
 from text import Text
+from file_parser import parse_file
 
-text = Text()
-with open('lorem.txt', 'r') as f:
-    file_as_str = f.read()
-for i in file_as_str.split():
-    word = Word(i)
-    text.words.append(word.get_word())
+text1 = Text('1.txt')
+text2 = Text('2.txt')
 
-for i in text.words:
-    print(i.value)
+# print('text1:', text1)
+# print('text2:', text2)
+
+parse_file('1.txt', '2.txt')
