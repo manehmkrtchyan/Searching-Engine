@@ -1,0 +1,14 @@
+Version 1
+Open a text file (lorem.txt) and read its contents into a string buffer.
+Split the contents into words.
+Clean the words by removing special characters and converting them to lowercase.
+Normalize the words using the words_alpha.txt dictionary.
+Design classes Word and Text, where Text is a collection of Words, supporting all the functionality to efficiently create and add Words by removing special characters, converting them to lowercase letters, and normalizing the words.
+Implement a small program to parse 1.txt and 2.txt files and store the parsing results into a new file, db.txt, Each line of the db.txt is one word parsed from 1.txt or 2.txt stored in the following format “word:1,2”, where “word” is the actual word. The numbers are the names of the files that contain the word (if any of the files have the word, their names should be placed after the colon).
+Modify the program and add a simple console user interface for the user to search for a word. The user types a word and the program searches for it in the db.txt and responds with the file names that contain the word.
+
+Version 2
+այսօրվա հանձնարարությունը կլինի նախագծել և իրականացնել Inverted Index որպես hashtable, որտեղ կպահպանվեն բառերն ու բառերին համապատասխանող դոքերը։
+Ձեր նախորդ հանձնարարության հիման վրա, երբ parse/normalize էիք անում 1.txt և 2.txt ֆայլերը, անհրաժեշտ է տեղափոխել նորմալիզացված բառերը դեպի նոր ստեղծված inverted index և հղվել դոքերի վրա։ hashtable-ի յուրաքանչյուր տարր իրենից կներկայացնի string key, որը կլինի նորմալիզացված բառը, իսկ որպես value կունենաք կապակցված ցուցակ, որտեղ կպահպանվեն նույն key-ն ու դոքումենտի (ֆայլի) անվանումը։
+Օրինակ՝ hello: 1.txt -> 2.txt
+Կապակցված ցուցակը պետք է լինի ձեր նախորդ հանձնարարություններին իրականացված ցուցակը։
